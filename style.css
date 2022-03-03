@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body{
+  height: 100vh;
+  background: url(green.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.name{
+   padding: 8px;
+  color: black;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.profile-card{
+  width: 400px;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-header{
+  background: #5e595d;
+  padding: 60px 40px;
+}
+
+.pic{
+  display: inline-block;
+  padding: 9px;
+  background: linear-gradient(130deg, rgb(96, 62, 247), #66f77e);
+  margin: auto;
+  border-radius: 50%;
+  background-size: 200% 200%;
+  animation: animated-gradient 2s linear infinite;
+}
+
+@keyframes animated-gradient{
+  25%{
+    background-position: left bottom;
+  }
+  50%{
+    background-position: right bottom;
+  }
+  75%{
+    background-position: right top;
+  }
+  100%{
+    background-position: left top;
+  }
+}
+
+.pic img{
+  display: block;
+  width: 105px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+
+.my{
+  padding: 12px 50px;
+  color: #4991f0;
+  border: 3px solid #6ff7b3;
+  border-radius: 20px;
+  margin-top: 11px;
+  transition: .3s linear;
+
+}
+
+.instagram:hover a,.instagram:focus a
+{
+    color: #d6249f;
+}
+
+.whatsapp:hover a,.whatsapp:focus a
+{
+    color: #31e949;
+}
+
+.sanpchat:hover a,.sanpchat:focus a
+{
+  color:rgb(205, 236, 91);
+}
